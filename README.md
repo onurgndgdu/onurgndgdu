@@ -1,13 +1,16 @@
-Hi, I'm Onur Gündoğdu! 👋
+# Onur Gündoğdu
 
-I'm a passionate Software Engineer specializing in Back-End Development. I enjoy solving complex problems and building scalable solutions using modern technologies.
+Senior Software Engineer — Java & Spring ekosisteminde backend geliştiriyorum.
+Şu an CK Enerji'de Oracle CC&B üzerine Java modülleri, merkezi kimlik
+doğrulama servisi ve planlı kesinti yönetim sistemi üzerinde çalışıyorum.
 
-### 🛠 Tech Stack
-### Languages: Java, JavaScript, Swift
-### Frameworks & Tools: Spring Boot, Node.js, Redis, Docker
-### 🚀 What I'm working on
-I'm constantly improving my skills in back-end development, particularly in microservices architecture and distributed systems. Currently focusing on enhancing my expertise with:
+**Stack**
+`Java` `Spring Boot` `Spring Cloud` `Spring Security` `Hibernate/JPA`
+`Oracle` `PostgreSQL` `Redis` `RabbitMQ` `Docker` `NestJS` `React`
 
-Building resilient and scalable services with Spring Boot and Node.js
-Optimizing caching solutions using Redis
-Containerizing applications with Docker
+**Öne çıkan çalışmalar**
+- **spring-auth-service** — JWT + refresh token, role-based authorization, LDAP entegrasyonu
+- **jpa-performance-lab** — N+1, fetch stratejileri, transaction ve locking davranışları
+- **codebase-rag** — Spring AI ile kod tabanı üzerinde hybrid retrieval
+
+📫 gundogduonur@outlook.com.tr
