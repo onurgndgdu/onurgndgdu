@@ -5,6 +5,12 @@
 **Dil:** İngilizce
 **Anlatım:** ~1.150 kelime, ~140 kelime/dk belgesel temposu
 
+> **Doyma testi: GEÇTİ ✅** (18 Eki 2026, YouTube Data API)
+> Tüm YouTube'da bu konuda 20K+ izlenen **tek video** var: 2021'den bir çocuk
+> masalı kanalı (KidTimeStoryTime, 74K izlenme). 2023 sonrası hiçbir şey yok.
+> Geniş arama ("umbrella history mocked London"): 20K üzeri sıfır video.
+> **Rekabet yok.** Detay: `channel-plan.md`
+
 ---
 
 ## 1. METADATA
@@ -275,7 +281,23 @@ No photographs exist of the events described.
 | 24 | 7:45–7:57 | 🎬 **AI-09** | Modern Londra, siyah şemsiyeler (üstten) |
 | 25 | 7:57–8:00 | 🖼️ Kart | Karga kapanış |
 
-**Toplam:** 9 AI klip · ~31 duran görsel · 3 kart
+**Revize toplam:** **5 AI klip** · ~31 duran görsel · 3 kart
+
+> **9 klipten 5'e indirildi.** Hareketin anlatısal işlevi olmayan planlar duran
+> görsele çevrildi — bu hem Gemini limitini korur hem ayda 20 video çıkarmayı
+> mümkün kılar.
+
+| Klip | Karar | Durum |
+|---|---|---|
+| AI-01 kanca | ✅ Video | **Bankada** |
+| AI-02 alay | ✅ Video | **Bankada** (hostile + jolly, iki versiyon) |
+| AI-03 çamurlu sokak | → Duran görsel | Kurucu plan, hareket işlevsiz |
+| AI-04 şemsiye açılışı | ✅ Video | ⏳ Gemini limiti |
+| AI-05 çamur sıçraması | → Duran görsel | Gravürle de olur |
+| AI-06 yağmurda dik duran adamlar | → Duran görsel | Zaten hareketsiz tablo |
+| AI-07 mevsim geçişi | ✅ Video | ⏳ Gemini limiti |
+| AI-08 1800'ler şemsiye denizi | → Duran görsel | Yavaş zoom yeter |
+| AI-09 modern kapanış | → **Ücretsiz stok** | Pexels/Pixabay yağmurlu şehir |
 
 ---
 
@@ -284,14 +306,26 @@ No photographs exist of the events described.
 ### ⚠️ STİL KİLİDİ — her prompt'un başına AYNEN yapıştır
 
 ```
-Painterly illustrated style, warm amber and deep teal color palette,
-soft volumetric light, visible brush texture, muted desaturated
-background, cinematic composition, 16:9, no text, no modern objects,
-no logos, historically accurate 18th century England —
+Photorealistic cinematic film still, warm amber practical lighting from a lamp
+on the left against deep teal-blue ambient shadow, volumetric haze and rain
+atmosphere, shallow depth of field, muted desaturated color grade,
+historically accurate 1750s England, no text, no logos, 16:9 —
 ```
 
-> Bu bloğu **asla değiştirme.** Değişirse klipler birbirine yapışmaz.
-> Her klip için 2-3 varyant üret, en temizini seç. İlk ve son 0.5 saniyeyi kes.
+> **Güncellendi.** İlk tarifte "painterly illustrated" vardı ama Gemini o kısmı
+> yok sayıp fotogerçekçi üretti — ve bu daha iyi sonuç verdi. En çok kazanan
+> tarih kanalları (Forgotten Fleet, WW2 Exposed) bu görünümde. Fotogerçekçi
+> **belgesel** okunur, illüstrasyon **çocuk içeriği** okunur.
+>
+> **Amber ışık her zaman solda** — AI-01, AI-02-hostile ve AI-02-jolly'de
+> tesadüfen böyle oldu ve klipler arası devamlılığı bu sağlıyor. Koru.
+>
+> Bu bloğu **asla değiştirme**, motor da değiştirme. Her klip için 2-3 varyant
+> üret, en temizini seç. İlk ve son 0.5 saniyeyi kes.
+>
+> Her prompt'a ekle: `he is the only person with an umbrella, every other
+> figure is unprotected in the rain` — "tek şemsiye" tezi görüntünün süsü
+> değil, videonun temeli.
 
 ---
 
@@ -396,6 +430,7 @@ Rijksmuseum · Library of Congress · Yale Center for British Art**
 
 ## 6. SES VE MÜZİK
 
+- **Anlatıcı sesi SEÇİLDİ ve kaydedildi:** `ulMcXnspFNs6zg3VDZDs` — "The Curious Archive — Narrator". Kanalın kalıcı sesi, her videoda aynısı kullanılacak. Kanca ölçümü 20,0 sn çıktı; senaryo temposu doğrulandı
 - **Seslendirme:** ElevenLabs, sabit ses. Hız normalin %90'ı. Perde geçişlerinde 1 sn sessizlik
 - **Müzik:** Düşük yoğunluklu yaylı/piyano arka plan, −24 dB. Perde 4'te (utanç) kaldır — sadece yağmur sesi kalsın, sonra Perde 5'te geri gir
 - **Ambiyans:** Sürekli yağmur katmanı, −30 dB. Alay sahnesinde kalabalık uğultusu
@@ -428,13 +463,25 @@ Rijksmuseum · Library of Congress · Yale Center for British Art**
 
 ## 8. ÜRETİM KONTROL LİSTESİ
 
-- [ ] Seslendirme üret (ElevenLabs, tek seferde tüm senaryo)
-- [ ] 9 AI klip üret (varyantlarla ~27 deneme)
+- [x] **Doyma testi** — geçti, rekabet yok (YouTube API, 18 Eki)
+- [x] **Anlatıcı sesi seçildi** — `ulMcXnspFNs6zg3VDZDs`
+- [x] **AI-01** kanca — bankada
+- [x] **AI-02-hostile** — bankada
+- [x] **AI-02-jolly** — bankada (Perde 3 için)
+- [ ] **Seslendirme üret** (tam senaryo, tek seferde) ← SIRADAKİ
+- [ ] Sese göre gerçek zaman çizelgesi çıkar, görsel sayısını kesinleştir
 - [ ] 31 duran görseli topla, 1920×1080'e kırp
-- [ ] Ken Burns hareketlerini uygula
-- [ ] Kurgu: sese göre kes, görsele göre değil
-- [ ] Müzik + yağmur ambiyansı
-- [ ] Thumbnail (320px testi yap)
+- [ ] Ken Burns hareketlerini uygula (6-9 sn, %3-5 zoom, yön değiştir)
+- [ ] AI-04 ve AI-07 üret (Gemini limiti yenilenince, aynı motor)
+- [ ] AI-09 için ücretsiz stok bul (Pexels/Pixabay)
+- [ ] Kurgu: **sese göre kes**, görsele göre değil
+- [ ] AI-02-hostile'daki 5. sn bağırma anını "shouted" kelimesine denk getir
+- [ ] Müzik + yağmur ambiyansı (Perde 4'te müziği kaldır, Perde 5'te geri gir)
+- [ ] Thumbnail (320px testi, en fazla 3 özne)
 - [ ] AI kullanım notunu açıklamaya ekle
 - [ ] Kaynakları sabitlenmiş yoruma yaz
-- [ ] Yüklemeden önce: konu doyma testi (17 Kasım, vidIQ)
+
+**Bilinen açıklar:** AI-01'de arka planda ikinci bir şemsiye görünüyor (ilk 1 sn
+atlanacak ya da kırpılacak) · Sokak fenerleri gaz lambası gibi duruyor, 1750'lerde
+yağ lambası vardı (önemsiz sapma) · Tüm klipler 720p, proje standardı bu kabul
+edildi, karıştırma.
