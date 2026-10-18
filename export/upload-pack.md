@@ -1,7 +1,7 @@
 # VIDEO 01 — YÜKLEME PAKETİ
 
 Dosyalar bu klasörde:
-- `umbrella-video01.mp4` — 1920×1080, 24 fps, 8:14, müzikli
+- `umbrella-video01.mp4` — 1920×1080, 24 fps, 8:14. Müziksiz: anlatım + yağmur ambiyansı
 - `umbrella-thumbnail.jpg` — 1280×720
 
 ---
@@ -39,12 +39,8 @@ Sources in the pinned comment.
 No photographs exist of the events described.
 
 Stock footage: Pexels
-Music: "Your Suggestions" — Unicorn Heads (YouTube Audio Library)
 Narration: synthetic voice
 ```
-
-> Müzik atıf gerektirmiyor ama yazdım — maliyeti sıfır, telif otomatiği
-> bir şey yakalarsa lehimize iz bırakıyor.
 
 ## Etiketler
 
