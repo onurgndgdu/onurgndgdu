@@ -131,23 +131,27 @@ Hareketin anlatısal işlevi yoksa duran görsel kullan. Kurucu planlar, portrel
 
 ## 5. VİDEO 1 DURUMU (Şemsiye)
 
+**Durum: BİTTİ, yayına hazır.** `export/umbrella-video01.mp4` — 8:14, 1920×1080, 24 fps, −14.7 LUFS.
+
 | Öğe | Durum |
 |---|---|
 | Senaryo | ✅ `umbrella-video-script.md` |
 | Doyma testi | ✅ Geçti — rekabet yok |
-| Anlatıcı sesi | ✅ Seçildi ve kaydedildi |
-| AI-01 kanca | ✅ Bankada |
-| AI-02-hostile | ✅ Bankada (5. saniyedeki bağırma anı "shouted" kelimesine denk gelecek) |
-| AI-02-jolly | ✅ Bankada (Perde 3'te kullanılacak) |
-| AI-04 şemsiye açılışı | ⏳ Gemini limiti bekleniyor |
-| AI-07 mevsim geçişi | ⏳ Gemini limiti bekleniyor |
-| Seslendirme (tam senaryo) | ⏳ Sıradaki |
-| 31 duran görsel | ⏳ |
-| Thumbnail | ⏳ |
-| Avatar/banner düzeltmeleri | ⏳ |
+| Seslendirme | ✅ Kokoro `bm_george`, tek dosya, ölçülmüş zaman kodlarıyla |
+| 5 video klip | ✅ |
+| 35 duran görsel | ✅ |
+| Kurgu | ✅ 69 kesme, `tools/timeline-video01.tsv` |
+| Renk | ✅ Görsel başına beyaz ayarı + ortak grade + gölge açma |
+| Yağmur ambiyansı | ✅ Sentezlendi |
+| Müzik | ❌ **Yok** — stok ses siteleri kutudan engelli |
+| Kartlar + karga rozeti | ✅ |
+| Thumbnail | ✅ `export/umbrella-thumbnail.jpg`, 320px testi geçti |
+| Yükleme paketi | ✅ `export/upload-pack.md` |
+| Avatar/banner düzeltmeleri | ⏳ Hâlâ bekliyor |
 
 ### Sıradaki adım
-Tam senaryoyu seçilen sesle okut → gerçek zaman çizelgesini çıkar → görsel sayısını kesinleştir.
+Yükle. Sonra video 2: **bisiklet yüzü** — veri en güçlü sinyali orada gösteriyor
+ve konu ısınıyor, pencere kapanmadan girilmeli.
 
 ---
 
