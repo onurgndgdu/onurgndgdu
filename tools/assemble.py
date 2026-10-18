@@ -112,7 +112,7 @@ BADGE = {"C1": 300, "C2": 0, "C3": 190}
 def card(kind, dst, dur, badge=None):
     fade = 8 / FPS
     texts = {
-        "C1": [("THE CURIOUS ARCHIVE", 86, 0.66), ("Things That Were Once Forbidden", 38, 0.75)],
+        "C1": [("SECRETS OF STUFF", 92, 0.66), ("Things That Were Once Forbidden", 38, 0.75)],
         "C2": [("HANWAYS", 150, 0.50)],
         "C3": [("More forgotten objects next week.", 54, 0.72)],
     }[kind]

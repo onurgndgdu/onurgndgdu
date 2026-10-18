@@ -1,4 +1,4 @@
-# THE CURIOUS ARCHIVE — Kanal Planı
+# SECRETS OF STUFF — Kanal Planı
 
 **Güncelleme:** 18 Ekim 2026
 **Niş:** Günlük nesnelerin tuhaf tarihi (faceless, uzun format, İngilizce)
@@ -122,7 +122,8 @@ Hareketin anlatısal işlevi yoksa duran görsel kullan. Kurucu planlar, portrel
 
 ### Ses
 
-- **voice_id:** `ulMcXnspFNs6zg3VDZDs` — "The Curious Archive — Narrator"
+- **Motor:** Kokoro-82M, yerel, Apache-2.0 — `tools/narrate.py`
+- **Ses:** `bm_george` (İngiliz erkek, olgun/otoriter)
 - Sakin, alçak, İngiliz, acelesiz, hafif alaycı
 - Tüm videolarda aynı ses. Değiştirme.
 - Tempo doğrulandı: ~1.150 kelime ≈ 8 dakika
@@ -143,7 +144,7 @@ Hareketin anlatısal işlevi yoksa duran görsel kullan. Kurucu planlar, portrel
 | Kurgu | ✅ 69 kesme, `tools/timeline-video01.tsv` |
 | Renk | ✅ Görsel başına beyaz ayarı + ortak grade + gölge açma |
 | Yağmur ambiyansı | ✅ Sentezlendi |
-| Müzik | ❌ **Yok** — stok ses siteleri kutudan engelli |
+| Müzik | ✅ "Your Suggestions" — Unicorn Heads, YouTube Ses Kitaplığı |
 | Kartlar + karga rozeti | ✅ |
 | Thumbnail | ✅ `export/umbrella-thumbnail.jpg`, 320px testi geçti |
 | Yükleme paketi | ✅ `export/upload-pack.md` |
@@ -164,4 +165,4 @@ Karga karakteri hazır ama dört teknik düzeltme bekliyor:
 3. **Thumbnail poz kütüphanesi yok** — 6 ifade tek seferde üretilmeli (şaşkın, kuşkulu, işaret eden, büyüteçle, iğrenen, kollar kavuşturulmuş)
 4. **Thumbnail vurgu rengi belirlenmeli** — koyu palet küçükken çamurlaşıyor
 
-**Kanal adı:** "Secrets of Stuff" aramada boş çıktı ama "stuff" arama niyeti taşımıyor. Banner'daki küçük yazı — **"The Curious Archive"** — daha iyi aday. Kullanmadan önce müsaitlik kontrolü şart.
+**Kanal adı: "Secrets of Stuff"** — karar verildi, kanal bu adla açık. Açılış kartı da bu adı taşıyor.
