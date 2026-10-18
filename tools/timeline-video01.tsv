@@ -1,0 +1,70 @@
+# start	end	asset	move	crop	note
+0.000	6.300	AI01	clip:1.0	-	hook, skip first second (second umbrella in bg)
+6.300	16.300	AI02H	clip:0.0	-	M1 shout at clip 5s = 0:11.3
+16.300	22.890	AI01	clip:4.0	-	"he kept doing it for thirty years"
+22.890	30.150	C1	card	-	channel card
+30.150	37.500	S01	in	-	what London was
+37.500	45.000	S03	out	-	it rained constantly
+45.000	52.500	S02	in	-	slurry of mud
+52.500	60.000	S04	out	right	dressed for a drawing room
+60.000	68.280	S05	in	-	powdered wigs
+68.280	76.000	S06	out	-	arrive ruined
+76.000	81.280	S07	in	-	hackney coach
+81.280	89.120	S09	out	-	umbrellas existed for thousands of years
+89.120	97.000	S10	in	-	umbra, shade
+97.000	105.860	S11	out	-	shaded women's complexions
+105.860	113.500	S12	in	-	a parasol was an accessory
+113.500	120.880	S11	out	wide	a woman's parasol carried by a man
+120.880	129.730	S13	in	-	act 3, Hanway portrait
+129.730	137.000	S14	out	-	merchant's desk
+137.000	144.000	S15	in	-	Russia
+144.000	149.610	S16	out	-	Persia
+149.610	156.450	S17	in	-	France, he had seen something useful
+156.450	166.450	V04	clip:0.0	-	walked out holding an umbrella
+166.450	174.000	S18	out	-	London doorway
+174.000	181.820	S22	in	-	the most visible and the most mocked
+181.820	187.600	S19	out	-	street children trailed after him
+187.600	193.440	AI02J	clip:0.0	-	onlookers hooted and jeered
+193.440	197.600	S08	in	right	the coachmen were the worst
+197.600	204.500	S20	out	-	angry coachman
+204.500	211.000	S07	in	wide	rain was their harvest
+211.000	216.510	S22	out	tight	they drove close to the kerb
+216.510	223.710	S21	in	-	they aimed for the puddles
+223.710	232.980	S20	out	tight	act 4, crowd's contempt ran deeper
+232.980	242.520	S23	in	-	the first charge: effeminate
+242.520	248.000	S11	out	tight	parasols belonged to women
+248.000	253.610	S12	in	wide	a woman's object
+253.610	262.000	S24	out	-	a man endured, stood in the rain
+262.000	268.000	S25	in	-	soaked gentleman
+268.000	273.380	S06	out	tight	visible admission
+273.380	281.000	S26	in	-	the umbrella was French
+281.000	288.000	S17	out	tight	brought the habit back from the continent
+288.000	294.000	S28	in	-	sliding toward war
+294.000	299.450	S27	out	-	anything French was suspect
+299.450	306.260	S04	in	wide	vain in a foreign way
+306.260	314.000	S29	out	blur	the essay attacking tea
+314.000	321.800	S30	in	-	corrupted the working poor
+321.800	330.930	S13	out	tight	the man London called soft and foreign
+330.930	336.040	S25	in	tight	drew the line elsewhere
+336.040	344.920	S31	out	-	act 5, aged Hanway
+344.920	352.500	S22	in	wide	he just kept walking out into the rain
+352.500	359.040	S01	out	tight	thirty years
+359.040	364.130	S13	in	wide	not a man dismissed as a crank
+364.130	371.000	S32	out	-	the Marine Society
+371.000	378.000	S32	in	tight	equipped poor boys for sea
+378.000	384.000	S30	out	tight	abandoned children
+384.000	390.010	S31	in	tight	a serious and respectable man
+390.010	398.000	S22	out	-	a ridiculous idea carried every day
+398.000	407.690	S24	in	tight	the jeering thinned, then it stopped
+407.690	416.870	V07	clip:0.0	-	M2 other men started carrying them
+416.870	421.000	C2	card	-	M3 HANWAYS
+421.000	426.730	S31	out	wide	M4 Jonas Hanway died in 1786
+426.730	435.000	S36	in	-	within a generation it was ordinary
+435.000	443.110	S36	out	tight	the black umbrella, the grey sky
+443.110	450.000	S09	in	tight	M5 a sun-shade invented for deserts
+450.000	456.890	S10	out	tight	designed for emperors
+456.890	464.000	S01	in	wide	the part worth keeping
+464.000	472.510	S12	out	tight	every object in your house
+472.510	480.360	S34	in	-	the laughter was survivable
+480.360	490.530	S37	out	-	the next time it rains
+490.530	494.530	C3	card	-	outro
