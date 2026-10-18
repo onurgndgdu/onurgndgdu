@@ -1,314 +1,310 @@
 # VIDEO 01 — GOOGLE FLOW PROMPT PAKETİ
 
-**Sıralı üretim listesi.** Yukarıdan aşağı çalış. Her prompt kopyala-yapıştır hazır.
+**Son güncelleme:** 18 Ekim 2026 · üretim sırasında düzeltildi
 
 ---
 
-## ⚠️ ÇALIŞMA KURALLARI
+## DURUM
 
-1. **İlk kabul edilebilir çıktıyı al.** Mükemmel arama — bugün yayınlamak hedef.
-2. Stil kilidi **asla değişmez.** Her prompt'ta zaten gömülü.
-3. Amber ışık **her zaman solda.** Devamlılık buradan geliyor.
-4. **Tek şemsiye kuralı:** Hanway dışında kimsede şemsiye yok. Her kalabalık sahnesinde bu cümle var.
-5. Görsellerde **hareket yok** — Ken Burns kurguda eklenecek.
-6. Dosya adını listedeki kodla kaydet (`S01`, `V04`...). Kurguda sıralamak için şart.
-
----
-
-# BÖLÜM A — VİDEO KLİPLER (2 adet)
-
-Zaten bankada olanlar: `AI-01` (kanca), `AI-02-hostile` (husumet), `AI-02-jolly` (kalabalık).
-Üretilecek 2 klip:
-
-### V04 — Şemsiyenin açılışı · 8 sn · Perde 3 (≈2:45)
-```
-Photorealistic cinematic film still, warm amber practical lighting from a lamp on the left against deep teal-blue ambient shadow, volumetric haze and rain atmosphere, shallow depth of field, muted desaturated color grade, historically accurate 1750s England, no text, no logos, 16:9 — a middle aged gentleman in a dark wool coat and tricorn hat steps out of a dark doorway into pouring rain and opens a large black umbrella above his head, the canopy filling the frame as it opens, warm interior light behind him, cold grey street ahead, he is the only person with an umbrella, slow motion, 1750s
-```
-
-### V07 — Mevsimlerin geçişi · 8 sn · Perde 5 (≈5:30)
-```
-Photorealistic cinematic film still, warm amber practical lighting from a lamp on the left against deep teal-blue ambient shadow, volumetric haze, shallow depth of field, muted desaturated color grade, historically accurate 1750s England, no text, no logos, 16:9 — the same gentleman with a black umbrella walking the same London street as the season shifts around him — heavy rain, then falling snow, then autumn leaves, then rain again — continuous unbroken walk, time passing, he is the only person with an umbrella, slow side tracking shot, 1750s to 1780s
-```
+| Varlık | Durum |
+|---|---|
+| `AI-01` kanca | ✅ bankada (720p) |
+| `AI-02-hostile` | ✅ bankada (720p) |
+| `AI-02-jolly` | ✅ bankada (720p) |
+| `V04` şemsiye açılışı | ✅ bankada (1080p) |
+| `V07` mevsim geçişi | ✅ bankada (1080p) — **yeri değişti, aşağıya bak** |
+| `S01` `S02` `S03` `S05` `S06` | ✅ onaylandı |
+| `S04` | ⚠️ onaylandı ama **sağ üçte biri kırpılacak** |
+| `S07` → `S36` | ⏳ **30 görsel kaldı** |
+| `S37` | ⏳ ücretsiz stok, üretme |
 
 ---
 
-# BÖLÜM B — GÖRSELLER (32 adet)
+## ÜRETİM SIRASINDA ÖĞRENİLENLER
 
-**Görsel stil kilidi** (her prompt'ta gömülü):
-> `Photorealistic cinematic film still, warm amber practical lighting from a lamp or window on the left against deep teal-blue ambient shadow, volumetric haze, shallow depth of field, muted desaturated color grade, historically accurate 1750s England, no text, no logos, 16:9 —`
+Bunlar deneyerek bulundu, kalan 30 görselde uygula.
+
+### 1. Gündüz dış mekânda amber kaybolur
+Model, lamba için bir gerekçe görmezse sıcak ışığı düşürüyor ve kare gri çıkıyor.
+**Her dış mekân prompt'una ekle:**
+```
+a lit oil lantern and a warm candlelit shop window glowing on the left side of the frame, their amber light spilling onto the wet street
+```
+
+### 2. Kalabalık + yağmur = model şemsiye ekler
+`no umbrellas` yetmiyor. Bir yasak değil, **dünya kuralı** vermek gerekiyor.
+**Kalabalık içeren her prompt'a ekle:**
+```
+not a single umbrella exists in this world yet, every person shields their head with a hat, hood, cloak or bare hands, no canopies of any kind
+```
+
+### 3. "1750s England" dönem ayakkabısı için yetmiyor
+Modern bot çıkabiliyor. Ayak görünen karelerde açıkça tarif et:
+`buckled leather shoe with white stocking and knee breeches, 18th century footwear only, no modern shoes`
+
+### 4. Tabela yazıları bozuk çıkıyor
+Her prompt'ta `no text, no signs, no lettering` olsun.
+
+### 5. Palet için tur yakma
+Amber zayıf çıkarsa yeniden üretme — **kurguda renk düzeltmesi 30 saniye**, yeniden üretim 3 dakika. Sadece **şemsiye ve dönem hatalarını** yakala, onlar düzeltilemez.
 
 ---
 
-## PERDE 2 — Londra, 1750 (0:22–2:00)
+## STİL KİLİDİ
 
-**S01** · çamurlu sokak, kurucu plan
 ```
-[KİLİT] — wide view of a narrow Georgian London street in heavy rain, thick brown mud and filth covering the road, an open gutter of dirty water running down the centre, horse dung and scattered refuse, leaning timber and brick buildings crowding both sides, nobody has an umbrella, grey overcast sky
-```
-
-**S02** · pislik detayı
-```
-[KİLİT] — close view of a London street gutter in the rain, thick mud, horse dung, ash and household refuse washing along the channel between wet cobblestones, a boot stepping into it
+Photorealistic cinematic film still, deep teal-blue ambient shadow, volumetric haze,
+shallow depth of field, muted desaturated color grade, historically accurate 1750s
+England, no text, no signs, no lettering, 16:9 —
 ```
 
-**S03** · damlayan çatılar
+Aşağıdaki prompt'larda `[K]` bu bloğun yerine geçiyor. Kopyalarken başına yapıştır.
+
+---
+
+# SIRADAKİ 30 GÖRSEL
+
+## PERDE 2 — kalan 6 görsel
+
+**S07** · kiralık araba 🚨kalabalık
 ```
-[KİLİT] — rain pouring off the broken wooden gutters and tiled rooftops of crowded Georgian London houses, water falling in sheets into the street below, grey sky
+[K] — a hackney coach waiting in the rain on a London street, horse steaming in the cold, driver hunched under his tricorn hat, passengers climbing in to escape the downpour, not a single umbrella exists in this world yet, every person shields their head with a hat, hood, cloak or bare hands, no canopies of any kind, a lit oil lantern and a warm candlelit shop window glowing on the left side of the frame, their amber light spilling onto the wet street
 ```
 
-**S04** · beyefendi, tam boy
+**S08** · arabacı 🚨kalabalık
 ```
-[KİLİT] — a wealthy London gentleman standing in the street wearing a heavy wool frock coat, embroidered silk waistcoat, white stock and a powdered wig, dignified posture, light rain beginning to fall on him, no umbrella
-```
-
-**S05** · peruk detayı
-```
-[KİLİT] — close view of an expensive white powdered wig on a gentleman's head, fine curls and powder visible, a few raindrops beginning to land on it
-```
-
-**S06** · mahvolmuş peruk
-```
-[KİLİT] — the same powdered wig now soaked and ruined by rain, powder running in white streaks down the wearer's neck and collar, misery on his face
-```
-
-**S07** · kiralık araba
-```
-[KİLİT] — a hackney coach waiting in the rain on a London street, horse steaming in the cold, driver hunched under his hat, passengers climbing in to escape the downpour
-```
-
-**S08** · arabacı
-```
-[KİLİT] — a London coachman sitting on his box in the rain, soaked greatcoat, watching the street with a calculating expression, his horse waiting patiently
+[K] — a London coachman sitting on his box in the rain, soaked greatcoat and tricorn hat, watching the street with a calculating expression, his horse waiting patiently, not a single umbrella exists in this world yet, every person shields their head with a hat, hood, cloak or bare hands, no canopies of any kind, warm amber lantern light from the left edge of the frame
 ```
 
 **S09** · antik güneşlik — Mısır
 ```
-[KİLİT, dönem yerine: ancient Egypt] — an ancient Egyptian stone relief carving showing a servant holding a ceremonial parasol over a seated pharaoh, weathered limestone, warm raking light
+Photorealistic cinematic film still, deep teal-blue ambient shadow, shallow depth of field, muted desaturated color grade, historically accurate ancient Egypt, no text, no lettering, 16:9 — an ancient Egyptian stone relief carving showing a servant holding a ceremonial parasol over a seated pharaoh, weathered limestone, warm raking amber light from the left
 ```
 
 **S10** · antik güneşlik — Asur
 ```
-[KİLİT, dönem yerine: ancient Assyria] — an ancient Assyrian palace relief showing an attendant holding a tall ceremonial parasol above a king, carved stone, side lighting
+Photorealistic cinematic film still, deep teal-blue ambient shadow, shallow depth of field, muted desaturated color grade, historically accurate ancient Assyria, no text, no lettering, 16:9 — an ancient Assyrian palace relief showing an attendant holding a tall ceremonial parasol above a king, carved stone, warm amber side lighting from the left
 ```
 
 **S11** · parasollü kadın
 ```
-[KİLİT] — an elegant 18th century English lady walking in bright sunshine holding a delicate decorated parasol to shade her face, pale complexion, summer garden path, warm light
+[K] — an elegant 18th century English lady walking in bright sunshine holding a delicate decorated parasol to shade her face, pale complexion, summer garden path, warm golden light from the left, clearly a sunny day with no rain
 ```
 
 **S12** · parasol detayı
 ```
-[KİLİT] — close view of a delicate 18th century lady's parasol, silk canopy with lace trim and a slender decorated handle, resting against a chair in sunlight, clearly an ornamental accessory
+[K] — close view of a delicate 18th century lady's parasol, silk canopy with lace trim and a slender decorated handle, resting against a chair in warm sunlight from the left, clearly an ornamental accessory not a rain shield
 ```
 
 ---
 
-## PERDE 3 — Hanway (2:00–3:45)
+## PERDE 3 — 10 görsel
 
 **S13** · Hanway portresi
 ```
-[KİLİT] — formal portrait of a thoughtful English merchant in his late thirties, 1750s dress, dark coat and white stock, intelligent determined expression, seated beside a desk, painted portrait style
+[K] — formal painted portrait of a thoughtful English merchant in his late thirties, 1750s dress, dark coat and white stock, intelligent determined expression, seated beside a desk, warm amber lamp light from the left
 ```
 
 **S14** · tüccarın masası
 ```
-[KİLİT] — an 18th century merchant's desk covered with ledgers, travel journals, quill and ink, a brass compass and folded maps, warm lamp light from the left
+[K] — an 18th century merchant's desk covered with ledgers, travel journals, quill and ink, a brass compass and folded maps, warm amber lamp light from the left
 ```
 
 **S15** · Rusya haritası
 ```
-[KİLİT, dönem yerine: 18th century] — an aged hand drawn map of Russia and Persia spread on a wooden table, trade routes marked in ink, candle light from the left
+Photorealistic cinematic film still, deep teal-blue ambient shadow, shallow depth of field, muted desaturated color grade, historically accurate 18th century, no readable text, 16:9 — an aged hand drawn map of Russia and Persia spread on a wooden table, ink trade routes, warm candle light from the left
 ```
 
 **S16** · İran kervanı
 ```
-[KİLİT, dönem yerine: 18th century Persia] — a merchant caravan of laden camels and traders crossing dry open country at dusk, long shadows, warm low sun
+Photorealistic cinematic film still, shallow depth of field, muted desaturated color grade, historically accurate 18th century Persia, no text, 16:9 — a merchant caravan of laden camels and traders crossing dry open country at dusk, long shadows, warm low amber sun from the left
 ```
 
-**S17** · Paris sokağı
+**S17** · Paris sokağı 🚨şemsiye BURADA OLMALI
 ```
-[KİLİT, dönem yerine: 1750s France] — a Paris street where several well dressed people walk calmly under umbrellas in light rain, the umbrellas completely ordinary and unremarkable here
+Photorealistic cinematic film still, deep teal-blue ambient shadow, volumetric haze, shallow depth of field, muted desaturated color grade, historically accurate 1750s France, no text, no lettering, 16:9 — a Paris street where several well dressed people walk calmly under umbrellas in light rain, the umbrellas completely ordinary and unremarkable here, a warm lit shop window on the left
 ```
+> ⚠️ Tek istisna bu. Fransa'da şemsiye normal — kontrastı bu kuruyor.
 
 **S18** · Londra kapı aralığı
 ```
-[KİLİT] — a dark Georgian doorway opening onto a rain soaked London street, warm light spilling out from inside, the wet street waiting beyond
+[K] — a dark Georgian doorway opening onto a rain soaked London street, warm amber light spilling out from inside on the left, the cold wet street waiting beyond, empty
 ```
 
-**S19** · sokak çocukları
+**S19** · sokak çocukları 🚨kalabalık
 ```
-[KİLİT] — a group of ragged London street children in the rain, barefoot and soaked, laughing and pointing at something off camera, none of them have umbrellas
-```
-
-**S20** · öfkeli arabacı
-```
-[KİLİT] — a London coachman glaring with open hostility from his driving seat in the rain, reins gripped tight, his empty coach behind him
+[K] — a group of ragged London street children in the rain, barefoot and soaked, laughing and pointing at something off camera, not a single umbrella exists in this world yet, every person shields their head with a hat, hood, cloak or bare hands, no canopies of any kind, warm amber lantern light from the left
 ```
 
-**S21** · tekerlek ve su birikintisi
+**S20** · öfkeli arabacı 🚨kalabalık
 ```
-[KİLİT] — a wooden carriage wheel striking a deep puddle on wet cobblestones, muddy water thrown violently sideways, low angle, dramatic
+[K] — a London coachman glaring with open hostility from his driving seat in the rain, reins gripped tight, his empty coach behind him, not a single umbrella exists in this world yet, every person shields their head with a hat, hood, cloak or bare hands, no canopies of any kind, warm amber lantern light from the left
 ```
 
-**S22** · çamura bulanmış adam
+**S21** · tekerlek ve su birikintisi ⭐
 ```
-[KİLİT] — a gentleman standing in the street splattered with brown street mud across his coat and stockings, holding a black umbrella above his head, enduring expression, people watching from doorways
+[K] — a wooden carriage wheel striking a deep puddle on wet cobblestones, muddy water thrown violently sideways, low angle, dramatic, warm amber lantern light from the left edge
+```
+> ⭐ Fazladan **video** hakkın varsa sadece bunu video yap. Sıçrama tamamen harekete bağlı.
+
+**S22** · çamura bulanmış adam 🚨kalabalık
+```
+[K] — a gentleman standing in the street splattered with brown street mud across his coat and white stockings, holding a black umbrella above his head, enduring expression, people watching from doorways, he is the only person with an umbrella, every other figure shields their head with a hat, hood or cloak, warm amber lantern light from the left
 ```
 
 ---
 
-## PERDE 4 — Neden utanç verici (3:45–5:30)
+## PERDE 4 — 8 görsel
 
 **S23** · kadın aksesuarı olarak parasol
 ```
-[KİLİT] — two fashionable 18th century English ladies walking together in sunshine, both holding ornamental parasols, clearly a feminine accessory of the period
+[K] — two fashionable 18th century English ladies walking together in bright sunshine, both holding ornamental parasols, clearly a feminine accessory, warm golden light from the left, no rain
 ```
 
-**S24** · yağmurda dimdik duran adamlar
+**S24** · yağmurda dimdik duran adamlar 🚨kalabalık
 ```
-[KİLİT] — four English gentlemen standing upright in driving rain with no protection, soaked wool coats, water streaming off their tricorn hats, stoic unmoving expressions, enduring it as a point of pride
+[K] — four English gentlemen standing upright in driving rain with no protection, soaked wool coats, water streaming off their tricorn hats, stoic unmoving expressions, enduring it as a point of pride, not a single umbrella exists in this world yet, no canopies of any kind, warm amber lantern light from the left
 ```
 
 **S25** · sırılsıklam beyefendi
 ```
-[KİLİT] — close view of an English gentleman's face in heavy rain, water running down his cheeks, jaw set, refusing to show discomfort
+[K] — close view of an English gentleman's face in heavy rain, water running down his cheeks, powdered wig soaked, jaw set, refusing to show discomfort, warm amber light from the left edge
 ```
 
-**S26** · Fransız modası
+**S26** · Fransız aristokrat
 ```
-[KİLİT, dönem yerine: 1750s France] — an elaborately dressed French aristocrat in silk and lace with powdered hair, delicate refined posture, ornate interior behind him
+Photorealistic cinematic film still, shallow depth of field, muted desaturated color grade, historically accurate 1750s France, no text, 16:9 — an elaborately dressed French aristocrat in silk and lace with powdered hair, delicate refined posture, ornate interior behind him, warm candlelight from the left
 ```
 
 **S27** · Fransız karşıtı karikatür
 ```
-[KİLİT, dönem yerine: 18th century] — an 18th century satirical print mocking French fashion, a thin over dressed Frenchman beside a sturdy plain Englishman, engraved caricature style, aged paper
+Photorealistic cinematic film still, muted desaturated color grade, historically accurate 18th century, no readable text, 16:9 — an 18th century satirical engraved print on aged paper mocking French fashion, a thin over dressed Frenchman beside a sturdy plain Englishman, engraving style, warm lamp light from the left
 ```
 
 **S28** · savaş
 ```
-[KİLİT, dönem yerine: 1756 Europe] — British and French infantry lines facing each other across a smoky battlefield, muskets and regimental colours, grey overcast sky, Seven Years War
+Photorealistic cinematic film still, volumetric haze, muted desaturated color grade, historically accurate 1756 Europe, no text, 16:9 — British and French infantry lines facing each other across a smoky battlefield, muskets and regimental colours, grey overcast sky, warm muzzle flash light from the left
 ```
 
 **S29** · çay makalesi
 ```
-[KİLİT, dönem yerine: 1756] — an aged printed pamphlet title page resting on a wooden desk, 18th century typography, quill and inkwell beside it, warm lamp light from the left
+Photorealistic cinematic film still, shallow depth of field, muted desaturated color grade, historically accurate 1756, no readable text, blurred illegible typography, 16:9 — an aged printed pamphlet title page resting on a wooden desk, quill and inkwell beside it, warm amber lamp light from the left
 ```
+> ⚠️ `no readable text` şart — AI yazısı bozuk çıkar. Bulanık olsun, kurguda yakın plan kullanmayacağız.
 
 **S30** · çay içmek
 ```
-[KİLİT] — an 18th century English family taking tea in a modest parlour, porcelain cups and teapot, warm window light from the left
+[K] — an 18th century English family taking tea in a modest parlour, porcelain cups and teapot, warm window light from the left
 ```
 
 ---
 
-## PERDE 5 — Otuz yıl (5:30–7:00)
+## PERDE 5 — 4 görsel
 
 **S31** · yaşlanmış Hanway
 ```
-[KİLİT] — portrait of the same English merchant now in his sixties, grey hair, lined face, same calm determined expression, seated with a black umbrella resting against his chair
+[K] — painted portrait of the same English merchant now in his sixties, grey hair, lined face, same calm determined expression, seated with a black umbrella resting against his chair, warm amber lamp light from the left
 ```
 
 **S32** · Marine Society
 ```
-[KİLİT] — ragged London boys being fitted with sailors' clothing and sea chests by charity officials in a plain hall, 1750s, warm light from a high window on the left
+[K] — ragged London boys being fitted with sailors' clothing and sea chests by charity officials in a plain hall, 1750s, warm amber light from a high window on the left
 ```
 
 **S33** · denizci çocuklar
 ```
-[KİLİT] — young boys in new sailors' slops standing on a London dock beside a tall ship, hopeful faces, grey river light
+[K] — young boys in new sailors' slops standing on a London dock beside a tall ship, hopeful faces, grey river light, warm lantern glow from the left
 ```
 
 **S34** · şemsiye dükkânı
 ```
-[KİLİT, dönem yerine: late 18th century England] — a small London shop window displaying several black umbrellas for sale, wooden frames and glass panes, warm light inside
+Photorealistic cinematic film still, deep teal-blue ambient shadow, shallow depth of field, muted desaturated color grade, historically accurate late 18th century England, no readable text, 16:9 — a small London shop window displaying several black umbrellas for sale, wooden frames and glass panes, warm amber light inside the shop on the left
 ```
 
 ---
 
-## PERDE 6 — Zafer (7:00–8:00)
+## PERDE 6 — 2 görsel
 
 **S35** · anma taşı
 ```
-[KİLİT, dönem yerine: late 18th century England] — a carved stone memorial tablet on a church wall, worn lettering, soft light from the left, dignified and quiet
+Photorealistic cinematic film still, shallow depth of field, muted desaturated color grade, historically accurate late 18th century England, no readable text, weathered illegible inscription, 16:9 — a carved stone memorial tablet on a church wall, soft warm light from the left, dignified and quiet
 ```
 
-**S36** · şemsiye denizi, 1800'ler
+**S36** · şemsiye denizi 🚨şemsiye BURADA OLMALI
 ```
-[KİLİT, dönem yerine: early 1800s London] — a busy London street in the rain where dozens of gentlemen all carry black umbrellas, a sea of dark canopies moving along the pavement, elevated wide view
+Photorealistic cinematic film still, deep teal-blue ambient shadow, volumetric haze, muted desaturated color grade, historically accurate early 1800s London, no text, 16:9 — a busy London street in the rain where dozens of gentlemen all carry black umbrellas, a sea of dark canopies moving along the pavement, elevated wide view, warm amber street lamps on the left
 ```
 
-**S37** · modern kapanış
-> ⚠️ **Bunu Flow'da üretme.** Pexels veya Pixabay'den ücretsiz stok indir:
-> arama: `rain umbrellas crowd overhead` — üstten çekilmiş, siyah şemsiyeli modern kalabalık.
-> AI üretmeye gerek yok, gerçek görüntü daha iyi durur ve bedava.
+**S37** · modern kapanış — **ÜRETME**
+> Pexels / Pixabay ücretsiz stok. Arama: `rain umbrellas crowd overhead`
 
 ---
 
-# BÖLÜM C — KARTLAR (3 adet)
+# KARTLAR (kurgu yazılımında)
 
-Flow'da değil, kurgu yazılımında yap. Palet: koyu turkuaz zemin, amber yazı.
+Koyu turkuaz zemin, amber yazı.
 
 | Kod | Nerede | İçerik |
 |---|---|---|
-| **C1** | 0:16–0:22 | Kanal adı + karga logosu |
-| **C2** | 6:45–7:00 | Tek kelime, büyük: **HANWAYS** |
-| **C3** | 7:57–8:00 | Karga + *"More forgotten objects next week."* |
+| `C1` | 0:16–0:22 | Kanal adı + karga logosu |
+| `C2` | 6:40–7:00 | Tek kelime, büyük: **HANWAYS** |
+| `C3` | 7:57–8:00 | Karga + *"More forgotten objects next week."* |
 
 ---
 
-# BÖLÜM D — KURGU SIRASI
+# KURGU SIRASI
 
-> Zamanlamalar **tahmini.** Seslendirme çıkınca gerçek süreye göre düzeltilecek.
 > **Sese göre kes, görsele göre değil.**
+> Perde 1-2 seslendirmesi ölçüldü: **113,3 sn** (tabloda 120 sn vardı, 7 sn duraklarla kapanır).
 
 | Süre | Varlık | Not |
 |---|---|---|
-| 0:00–0:08 | `AI-01` | İlk 1 sn atla (arka planda ikinci şemsiye var) |
-| 0:08–0:16 | `AI-02-hostile` | ⭐ 5. sn bağırma anı **"shouted"** kelimesine denk gelecek |
-| 0:16–0:22 | `C1` | Başlık kartı |
+| 0:00–0:08 | `AI-01` | İlk 1 sn atla — arka planda ikinci şemsiye var |
+| 0:08–0:16 | `AI-02-hostile` | ⭐ 5. sn bağırma anı **"shouted"** kelimesine denk gelsin |
+| 0:16–0:22 | `C1` | |
 | 0:22–0:38 | `S01` `S02` | |
-| 0:38–0:54 | `S03` `S04` | |
+| 0:38–0:54 | `S03` `S04` | ⚠️ `S04` sağ üçte biri kırpılacak, hareket sola |
 | 0:54–1:10 | `S05` `S06` | |
 | 1:10–1:26 | `S07` `S08` | |
 | 1:26–1:42 | `S09` `S10` | |
 | 1:42–2:00 | `S11` `S12` | |
 | 2:00–2:16 | `S13` `S14` | |
 | 2:16–2:32 | `S15` `S16` | |
-| 2:32–2:45 | `S17` | |
+| 2:32–2:45 | `S17` | Paris — şemsiyeler normal |
 | 2:45–2:53 | `V04` | Şemsiye açılışı |
 | 2:53–3:09 | `S18` `S19` | |
-| 3:09–3:20 | `AI-02-jolly` | Kalabalığın ilk tepkisi — neşeli versiyon buraya |
+| 3:09–3:20 | `AI-02-jolly` | Kalabalığın ilk tepkisi |
 | 3:20–3:36 | `S20` `S21` | |
 | 3:36–3:45 | `S22` | |
 | 3:45–4:01 | `S23` `S24` | |
 | 4:01–4:17 | `S25` `S26` | |
 | 4:17–4:33 | `S27` `S28` | |
 | 4:33–4:50 | `S29` `S30` | |
-| 4:50–5:30 | *tekrar kullan:* `S04` `S11` `S24` | Farklı kırpma + ters zoom yönü |
-| 5:30–5:38 | `V07` | Mevsim geçişi |
-| 5:38–5:54 | `S31` `S32` | |
-| 5:54–6:10 | `S33` `S34` | |
-| 6:10–6:45 | *tekrar kullan:* `S13` `S22` `S31` | |
-| 6:45–7:00 | `C2` | **HANWAYS** |
+| 4:50–5:30 | *tekrar:* `S04` `S11` `S24` | Farklı kırpma + ters zoom |
+| 5:30–5:46 | `S31` `S32` | ← `V07` buradan taşındı |
+| 5:46–6:02 | `S33` `S34` | |
+| 6:02–6:30 | *tekrar:* `S13` `S22` | |
+| **6:30–6:40** | **`V07`** | ⭐ **"other men started carrying them"** cümlesine denk gelecek — arka plandaki şemsiyeler burada hata değil, kanıt |
+| 6:40–7:00 | `C2` | **HANWAYS** |
 | 7:00–7:16 | `S35` `S36` | |
-| 7:16–7:45 | *tekrar kullan:* `S36` `S01` | Başa dönüş hissi |
+| 7:16–7:45 | *tekrar:* `S36` `S01` | Başa dönüş hissi |
 | 7:45–7:57 | `S37` | Modern stok |
-| 7:57–8:00 | `C3` | Kapanış |
+| 7:57–8:00 | `C3` | |
 
-**Ken Burns kuralı:** her görsel 6–9 sn, %3–5 yavaş zoom, **yön değiştir** (bir içeri, bir dışarı). Tekrar kullanılan görsellerde farklı kırp ve ters yöne zoom yap — izleyici tekrarı fark etmez.
+**Ken Burns:** her görsel 6–9 sn, %3–5 yavaş zoom, **yön değiştir** (bir içeri, bir dışarı). Tekrar kullanılanlarda farklı kırp + ters yön.
+
+**Çözünürlük:** zaman çizelgesi 1920×1080. İlk üç klip 720p, otomatik büyür, yağmur ve grain örter. **Video 2'de baştan 1080p üret.**
 
 ---
 
-# BÖLÜM E — BUGÜNKÜ SIRALAMA
+# BUGÜNKÜ SIRA
 
-1. ☐ **Seslendirme** (Claude üretir, ~10 dk) → gerçek zaman çizelgesi
-2. ☐ **Flow: 2 video klip** (`V04`, `V07`)
-3. ☐ **Flow: 36 görsel** — perde perde, toplu
-4. ☐ **Stok indir** (`S37`)
-5. ☐ **Kartlar** (`C1` `C2` `C3`)
-6. ☐ **Thumbnail** — 320px testi, en fazla 3 özne
-7. ☐ **Kurgu** — sese göre kes
-8. ☐ **Ses katmanları** — müzik −24 dB, yağmur −30 dB. Perde 4'te müzik sussun, Perde 5'te girsin
-9. ☐ **Yükle** — açıklamaya AI notu, sabitlenmiş yoruma kaynaklar
-
-⏱️ Görsel üretimi darboğaz. Varyant avına çıkma — ilk kabul edilebiliri al, devam et.
+1. ✅ Seslendirme 1. bölüm · 2. bölüm sırada
+2. ✅ 5 video klip
+3. ⏳ **30 görsel** — `S07`'den devam
+4. ☐ `S37` stok indir
+5. ☐ Kartlar `C1` `C2` `C3`
+6. ☐ Thumbnail — 320px testi, en fazla 3 özne
+7. ☐ Kurgu — sese göre kes
+8. ☐ Ses katmanları — müzik −24 dB, yağmur −30 dB. Perde 4'te müzik sussun, Perde 5'te girsin
+9. ☐ Yükle — açıklamaya AI notu, sabitlenmiş yoruma kaynaklar
