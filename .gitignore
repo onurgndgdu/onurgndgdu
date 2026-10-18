@@ -1,0 +1,4 @@
+
+# Video masters. Too large for the repo and reproducible from the timeline:
+#   tools/assemble.py  +  tools/timeline-video01.tsv  +  the source assets.
+export/*.mp4

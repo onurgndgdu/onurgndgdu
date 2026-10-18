@@ -104,18 +104,33 @@ def clip(src, dst, dur, start, upscale):
          "-preset", "medium", "-crf", "17", "-an", dst])
 
 
-def card(kind, dst, dur):
+# The channel mark. C2 carries no crow — it holds one word and nothing else
+# should compete with it.
+BADGE = {"C1": 300, "C2": 0, "C3": 190}
+
+
+def card(kind, dst, dur, badge=None):
     fade = 8 / FPS
     texts = {
-        "C1": [("THE CURIOUS ARCHIVE", 86, 0.46), ("Things That Were Once Forbidden", 38, 0.58)],
+        "C1": [("THE CURIOUS ARCHIVE", 86, 0.66), ("Things That Were Once Forbidden", 38, 0.75)],
         "C2": [("HANWAYS", 150, 0.50)],
-        "C3": [("More forgotten objects next week.", 54, 0.50)],
+        "C3": [("More forgotten objects next week.", 54, 0.72)],
     }[kind]
     draws = ",".join(
-        f"drawtext=fontfile={FONT}:text='{t}':fontcolor={AMBER}:fontsize={s}:"
+        f"drawtext=fontfile={FONT}:text='{txt}':fontcolor={AMBER}:fontsize={size}:"
         f"x=(w-text_w)/2:y=h*{y}-text_h/2"
-        for t, s, y in texts
+        for txt, size, y in texts
     )
+    size = BADGE[kind]
+    if size and badge:
+        crow = (f"[1]scale={size}:{size}[b];[0][b]overlay=x=(W-{size})/2:"
+                f"y=H*0.36-{size}/2,")
+        fc = f"{crow}{draws},{GRAIN},fade=t=in:st=0:d={fade:.3f},fade=t=out:st={dur - fade:.3f}:d={fade:.3f},format=yuv420p"
+        run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi",
+             "-i", f"color=c={TEAL}:s={W}x{H}:r={FPS}:d={dur:.3f}", "-i", badge,
+             "-filter_complex", fc, "-c:v", "libx264", "-preset", "medium",
+             "-crf", "17", "-an", dst])
+        return
     vf = (f"{draws},{GRAIN},fade=t=in:st=0:d={fade:.3f},"
           f"fade=t=out:st={dur - fade:.3f}:d={fade:.3f},format=yuv420p")
     run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi",
@@ -139,7 +154,7 @@ def main(src_dir, work, out):
         parts.append(dst)
         if not os.path.exists(dst):
             if move == "card":
-                card(asset, dst, dur)
+                card(asset, dst, dur, badge=f"{src_dir}/crow-badge.png")
             elif move.startswith("clip:"):
                 clip(f"{src_dir}/{asset}.mp4", dst, dur, float(move.split(":")[1]),
                      asset in ("AI01", "AI02H", "AI02J"))
