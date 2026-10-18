@@ -89,7 +89,10 @@ Her yeni konu için, yüklemeden önce:
 Script: `scratchpad/yt/saturation.py` (depo dışında, anahtar içermez).
 Kota: 10 konu ≈ günlük kotanın %12'si.
 
-⚠️ **API anahtarı sohbete yapıştırıldı, iptal edilmeli.** Yenisi oluşturulurken YouTube Data API v3 ile sınırlandırılmalı ve IP/referrer kısıtlaması eklenmeli. Anahtar hiçbir dosyaya yazılmamalı — bu depoda otomatik commit eden hook var.
+✅ Sohbete yapıştırılan anahtar Cloud Console'dan **silindi** (18 Eki 2026).
+Yeni anahtar gerektiğinde: YouTube Data API v3 ile sınırla, IP/referrer kısıtlaması ekle,
+`YT_KEY` ortam değişkeninden oku. **Hiçbir dosyaya yazma** — bu depoda otomatik commit
+eden hook var ve depo herkese açık.
 
 ---
 
