@@ -13,10 +13,16 @@
 | `AI-02-jolly` | ✅ bankada (720p) |
 | `V04` şemsiye açılışı | ✅ bankada (1080p) |
 | `V07` mevsim geçişi | ✅ bankada (1080p) — **yeri değişti, aşağıya bak** |
-| `S01` `S02` `S03` `S05` `S06` | ✅ onaylandı |
-| `S04` | ⚠️ onaylandı ama **sağ üçte biri kırpılacak** |
-| `S07` → `S36` | ⏳ **30 görsel kaldı** |
+| `S01`–`S03`, `S05`–`S17`, `S19`–`S30` | ✅ onaylandı (29 görsel) |
+| `S04` | ⚠️ onaylandı ama **sağ üçte biri kırpılacak** (arka planda şemsiye + silindir şapka) |
+| `S18` | ❌ **yeniden üretilecek** — modern elektrik anahtarı, kilit, sokak lambası çıktı |
+| `S20` | ⚠️ kullanılıyor ama silindir şapka hatası var (ifade değerli, bugün geçiyoruz) |
+| `S27` `S29` | ⚠️ yazı bozuk — Ken Burns'ü yazıya odaklama, `S29`'da metne hafif blur at |
+| `S31` `S32` `S34` `S36` | ⏳ **kalan 4 görsel** |
+| `S33` `S35` | ❌ kesildi — tekrarla dolduruldu |
 | `S37` | ⏳ ücretsiz stok, üretme |
+
+**Toplam: 34 görsel** (36'dan 2 kesildi) · **5 video klip** · 3 kart
 
 ---
 
@@ -211,10 +217,9 @@ Photorealistic cinematic film still, shallow depth of field, muted desaturated c
 [K] — ragged London boys being fitted with sailors' clothing and sea chests by charity officials in a plain hall, 1750s, warm amber light from a high window on the left
 ```
 
-**S33** · denizci çocuklar
-```
-[K] — young boys in new sailors' slops standing on a London dock beside a tall ship, hopeful faces, grey river light, warm lantern glow from the left
-```
+**S33** · ~~denizci çocuklar~~ — ❌ **KESİLDİ**
+> `S32` hayırseverlik noktasını tek başına kuruyor. İkisi aynı şeyi söylüyordu.
+> Slot `S13`'ün tekrarıyla dolduruldu (genç Hanway ↔ yaşlı Hanway kıyası).
 
 **S34** · şemsiye dükkânı
 ```
@@ -225,10 +230,10 @@ Photorealistic cinematic film still, deep teal-blue ambient shadow, shallow dept
 
 ## PERDE 6 — 2 görsel
 
-**S35** · anma taşı
-```
-Photorealistic cinematic film still, shallow depth of field, muted desaturated color grade, historically accurate late 18th century England, no readable text, weathered illegible inscription, 16:9 — a carved stone memorial tablet on a church wall, soft warm light from the left, dignified and quiet
-```
+**S35** · ~~anma taşı~~ — ❌ **KESİLDİ, ve bu bir iyileştirme**
+> *"Jonas Hanway died in 1786"* cümlesinin üstüne jenerik bir mezar taşı değil,
+> **`S31`'in tekrarı** (yaşlı Hanway portresi) gelecek. Adamın yüzüne bakarken
+> ölümünü duymak, bir taşa bakarken duymaktan çok daha vurucu. Taş kimse olabilir; yüz o.
 
 **S36** · şemsiye denizi 🚨şemsiye BURADA OLMALI
 ```
@@ -281,14 +286,20 @@ Koyu turkuaz zemin, amber yazı.
 | 4:17–4:33 | `S27` `S28` | |
 | 4:33–4:50 | `S29` `S30` | |
 | 4:50–5:30 | *tekrar:* `S04` `S11` `S24` | Farklı kırpma + ters zoom |
-| 5:30–5:46 | `S31` `S32` | ← `V07` buradan taşındı |
-| 5:46–6:02 | `S33` `S34` | |
-| 6:02–6:30 | *tekrar:* `S13` `S22` | |
+| 5:30–5:40 | `S31` | Yaşlı Hanway — Perde 5 açılışı |
+| 5:40–5:50 | `S32` | Marine Society |
+| 5:50–6:00 | *tekrar:* `S13` | ⭐ Genç Hanway — yaşlıdan gence kesme, 30 yılı tek hamlede anlatır |
+| 6:00–6:10 | `S34` | Şemsiye dükkânı |
+| 6:10–6:20 | *tekrar:* `S22` | Çamurlu adam |
+| 6:20–6:30 | *tekrar:* `S01` | Çamurlu sokak |
 | **6:30–6:40** | **`V07`** | ⭐ **"other men started carrying them"** cümlesine denk gelecek — arka plandaki şemsiyeler burada hata değil, kanıt |
-| 6:40–7:00 | `C2` | **HANWAYS** |
-| 7:00–7:16 | `S35` `S36` | |
-| 7:16–7:45 | *tekrar:* `S36` `S01` | Başa dönüş hissi |
-| 7:45–7:57 | `S37` | Modern stok |
+| 6:40–6:46 | `C2` | **HANWAYS** — 6 sn yeter, kart uzun durmaz |
+| 6:46–6:58 | *tekrar:* `S31` | ⭐ *"Jonas Hanway died in 1786"* — yüzüne bakarken duyulacak |
+| 6:58–7:10 | `S36` | Şemsiye denizi |
+| 7:10–7:22 | *tekrar:* `S36` | Farklı kırpma |
+| 7:22–7:34 | *tekrar:* `S09` veya `S10` | ⭐ *"a sun-shade, invented for deserts and designed for emperors"* — firavunun güneşliği 7 dakika sonra geri dönüyor |
+| 7:34–7:46 | *tekrar:* `S01` | Başa dönüş — çamurlu sokak |
+| 7:46–7:57 | `S37` | Modern stok |
 | 7:57–8:00 | `C3` | |
 
 **Ken Burns:** her görsel 6–9 sn, %3–5 yavaş zoom, **yön değiştir** (bir içeri, bir dışarı). Tekrar kullanılanlarda farklı kırp + ters yön.
