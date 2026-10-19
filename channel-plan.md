@@ -153,9 +153,36 @@ Hareketin anlatısal işlevi yoksa duran görsel kullan. Kurucu planlar, portrel
 | Yükleme paketi | ✅ `export/upload-pack.md` |
 | Avatar/banner düzeltmeleri | ⏳ Hâlâ bekliyor |
 
+---
+
+## 5b. VİDEO 2 DURUMU (Bisiklet yüzü)
+
+**Durum: BİTTİ, yayına hazır.** `export/bicycle-face-video02.mp4` — 8:38, −15.0 LUFS.
+
+| Öğe | Durum |
+|---|---|
+| Senaryo | ✅ `bicycle-face-script.md` |
+| Seslendirme | ✅ Kokoro `bm_george`, 8:34.4, 129 kelime/dk |
+| 27 görsel + 4 klip | ✅ Tek bir dönem hatası çıkmadı |
+| Kurgu | ✅ 72 kesme, `tools/timeline-video02.tsv` |
+| Thumbnail | ✅ 320px testi geçti |
+| Yükleme paketi | ✅ `export/upload-pack-video02.md` |
+| Ses | Sade anlatım — müzik ve ambiyans yok |
+
+### Video 1'den taşınan dersler
+- Kanca 25 sn hedeflendi, 31 sn çıktı (video 1: 30 sn). Metin kısalmadı, tempo yavaşladı
+- Perde sınırları tahminle tutmadı — 3. perdeden sonra 29-45 sn kaydı.
+  **Video 3'te zaman çizelgesi ancak ses ölçüldükten sonra kurulacak**
+- Sentetik yağmur tekrarlanmadı
+
 ### Sıradaki adım
-Yükle. Sonra video 2: **bisiklet yüzü** — veri en güçlü sinyali orada gösteriyor
-ve konu ısınıyor, pencere kapanmadan girilmeli.
+Yükle. Son ekrana şemsiye videosunu koy — iki video arası bağ, öneri
+sisteminin tek videoyla kuramadığı şey.
+
+Sonra **video 3: liste formatı** — *"6 Everyday Objects That Were Once
+Forbidden"*. Trend listesinde liste videoları güçlü performans gösteriyor,
+araştırma zaten elimizde, doğal olarak uzun. ⚠️ Doyma testi yapılmadı,
+yeni API anahtarı gerekiyor.
 
 ---
 
