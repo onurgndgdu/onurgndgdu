@@ -77,10 +77,29 @@ interview, so it is described rather than quoted.
 | Değiştirilmiş içerik beyanı | **Evet** — AI görsel kullanıldı |
 | Oynatma listesi | *Things That Were Once Forbidden* |
 | Son ekran | Son 10 sn: abone + şemsiye videosu |
+| YouTube kartı | **1 adet, 07:26** → şemsiye videosu |
 
 **Son ekranda şemsiye videosunu göster.** İki video arasında bağ kurmak,
 YouTube'a "bu kanalı izleyen bunu da izler" sinyali veriyor — tek videolu
 kanalda kuramadığımız şey buydu.
+
+### YouTube kartı — tek tane, 07:26
+
+**Studio → video → Düzenleyici → Kartlar → Video → şemsiye videosu → 07:26**
+
+Neden tam orada: 7:26'da Perde 6 başlıyor, *"Bicycle face disappeared
+without ever being formally disproved"* cümlesi. Hikâye kapanıyor, izleyici
+"başka ne vardı?" diye düşünmeye en açık olduğu an burası.
+
+**Neden sadece bir tane:** Kart tıklanma oranları genelde düşük, asıl işi
+son ekran yapıyor. Birden fazla kart izleyiciyi videodan erken koparma
+riski taşıyor — izlenme süresi düşer, ki YouTube'un ödüllendirdiği şey o.
+
+⚠️ **Videonun başına kart koyma.** İlk 30 saniye kancanın işi; oraya
+tıklanacak bir şey koymak kancayı sabote eder.
+
+> Not: `C1` `C2` `C3` video içi kartları zaten render edildi (0:32, 3:25, 8:37).
+> Burada bahsedilen YouTube'un etkileşimli kartı, ayrı bir şey.
 
 ---
 
