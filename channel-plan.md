@@ -159,13 +159,19 @@ ve konu ısınıyor, pencere kapanmadan girilmeli.
 
 ---
 
-## 6. BEKLEYEN MARKA İŞLERİ
+## 6. MARKA
 
-Karga karakteri hazır ama dört teknik düzeltme bekliyor:
+| İş | Durum |
+|---|---|
+| Profil fotoğrafı | ✅ `export/brand/avatar-800.jpg` — 48px'te test edildi |
+| Banner | ✅ `export/brand/banner-2560x1440.jpg` — güvenli alan doğrulandı |
+| Kanal açıklaması, oynatma listesi, anahtar kelimeler | ✅ `export/brand/channel-setup.md` |
+| **Thumbnail vurgu rengi** | ✅ Amber **#E8A33D** — kart, banner ve thumbnail'de aynı |
+| Thumbnail poz kütüphanesi | ⏳ 6 ifade (şaşkın, kuşkulu, işaret eden, büyüteçle, iğrenen, kollar kavuşturulmuş) |
 
-1. **Profil fotoğrafı 48px'te kayboluyor** — sadece kafa/omuz, düz tek renk arka plan, yüz kontrastı artır
-2. **Banner yanlış** — 2560×1440, güvenli alan 1235×338, içine yuvarlak avatar koyma
-3. **Thumbnail poz kütüphanesi yok** — 6 ifade tek seferde üretilmeli (şaşkın, kuşkulu, işaret eden, büyüteçle, iğrenen, kollar kavuşturulmuş)
-4. **Thumbnail vurgu rengi belirlenmeli** — koyu palet küçükken çamurlaşıyor
+**Avatar notu:** 48 pikselde kaybolmasının sebebi siyah karganın koyu kahve raf
+önünde durmasıydı. Kafa kadrajı dolduruldu, arka plan düz turkuaza çevrildi.
+Üç zemin tonu 48 pikselde yan yana test edildi, en açık olan (#1E5160) kazandı —
+koyu marka turkuazı (#0E2A32) o boyutta kafayla birleşiyordu.
 
 **Kanal adı: "Secrets of Stuff"** — karar verildi, kanal bu adla açık. Açılış kartı da bu adı taşıyor.
