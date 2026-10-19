@@ -26,6 +26,7 @@ opens a new act:
 --markers writes the start time of every paragraph and act, which is what the
 edit plan's sync points are placed against.
 """
+import os
 import re
 import sys
 
@@ -35,8 +36,12 @@ from kokoro_onnx import Kokoro
 
 VOICE = "bm_george"      # channel narrator — do not change between videos
 SPEED = 0.92             # unhurried
-MODEL = "kokoro-model/kokoro-v1.0.onnx"
-VOICES = "kokoro-model/voices-v1.0.bin"
+# Resolved from KOKORO_DIR so the script works from any working directory;
+# running it from the repo root instead of beside the model files is an easy
+# mistake and the failure only shows up after the call has already started.
+_MODEL_DIR = os.environ.get("KOKORO_DIR", "kokoro-model")
+MODEL = os.path.join(_MODEL_DIR, "kokoro-v1.0.onnx")
+VOICES = os.path.join(_MODEL_DIR, "voices-v1.0.bin")
 
 PAUSE = {"plain": 0.65, "beat": 1.00, "cut": 1.40, "act": 1.60}
 
