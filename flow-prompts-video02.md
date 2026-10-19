@@ -6,6 +6,23 @@
 
 ---
 
+## DURUM — 19 Eki 2026
+
+| Varlık | Durum |
+|---|---|
+| `V01` kanca | ✅ onaylandı — 1080p, kadın kadraja doğru büyüyor, ifade kararlı |
+| `V02` gerilmiş yüz | ⚠️ onaylandı **ama kırpılacak** — yakın plan 6. saniyede genişe açılıyor. **Sadece 0:00–5:50 kullanılacak** |
+| `V03` erkekler | ✅ onaylandı — yüzler görünür, efor okunuyor |
+| `V04` dönem geçişi | ✅ **tuttu** — en riskli klipti. ⚠️ modern yarıda tabela yazıları bozuk, **dondurma, kırpma yapma** |
+| `S01`–`S15` | ✅ onaylandı (15/27) |
+| `S16`–`S27` | ⏳ sırada |
+| `S28` Pexels | ⏳ indirilecek |
+
+**Hiçbir karede modern bisiklet hatası çıkmadı** — madde 1 çalıştı.
+`S15` iki kadraj veriyor, kırpma planı doğrulandı.
+
+---
+
 ## STİL KİLİDİ — her prompt'un başına AYNEN yapıştır
 
 ```
