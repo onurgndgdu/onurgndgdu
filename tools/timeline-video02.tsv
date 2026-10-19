@@ -1,0 +1,73 @@
+# start	end	asset	move	crop	note
+0.000	9.000	V01	clip:0.5	-	hook, woman riding toward camera
+9.000	16.000	S01	in	-	it had a name, it had symptoms
+16.000	22.710	S13	out	-	it appeared in medical journals
+22.710	28.500	S15	in	-	it affected only women
+28.500	35.500	C1	card	-	there was no such disease
+35.500	41.140	S05	out	-	act 2, what had just been invented
+41.140	48.500	S02	in	-	the penny-farthing
+48.500	54.460	S02	out	tight	unrideable in a skirt
+54.460	63.000	S03	in	-	the safety bicycle arrived
+63.000	71.230	S03	out	close	chain drive, pneumatic tyres
+71.230	80.000	S04	in	-	a cycling boom
+80.000	86.400	S05	out	left	a large share were women
+86.400	95.000	S06	in	-	she was accompanied, or she did not go
+95.000	100.220	S06	out	close	her movements were supervised
+100.220	110.000	S07	in	-	no horse, no driver, no permission
+110.000	118.960	S20	out	-	nobody knew where she had gone
+118.960	127.000	S08	in	-	corsets restricted breathing
+127.000	137.480	S09	out	-	skirts caught in the chain
+137.480	145.400	S10	in	-	shortened skirts and bloomers
+145.400	150.490	S11	out	-	argued about in newspapers
+150.490	156.500	S12	in	-	act 3, the phrase appears by 1895
+156.500	162.110	S12	out	close	a wearied and exhausted bicycle face
+162.110	172.000	S13	in	tight	a British physician, February 1897
+172.000	177.500	S14	out	-	The Hidden Dangers of Cycling
+177.500	182.610	S14	in	close	he claimed to be first to diagnose
+182.610	188.110	V02	clip:0.0	-	the description was specific
+188.110	196.000	S15	out	tight	jaw clenched, lips pressed thin
+196.000	203.390	S15	in	close	eyes hard and staring
+203.390	208.000	C2	card	-	"BICYCLE FACE"
+208.000	213.350	S16	out	-	the expression would not relax again
+213.350	221.000	S16	in	close	bicycle stoop, heart, hand, twitch
+221.000	227.720	S14	out	wide	an entire family of conditions
+227.720	236.000	S09	in	tight	some of these described real strain
+236.000	246.690	S12	out	wide	it added a consequence that was not true
+246.690	252.250	S03	in	wide	act 4, the detail that gives it away
+252.250	262.250	V03	clip:0.0	-	men rode bicycles too, in enormous numbers
+262.250	268.980	S17	out	-	the same red strained faces
+268.980	276.000	S15	in	wide	but the warnings were not addressed to them
+276.000	284.880	S11	out	tight	concerns itself with what it did to their faces
+284.880	293.000	S18	in	-	Kenealy: exercise drained what they needed
+293.000	301.410	S19	out	-	to bear children
+301.410	310.000	S20	in	tight	unchaperoned, out of sight
+310.000	315.500	S21	out	-	clergymen warned
+315.500	320.600	S21	in	close	what she might do with an afternoon
+320.600	326.250	S07	out	tight	not about faces or hearts or hands
+326.250	330.840	S10	in	tight	somewhere nobody chose for her
+330.840	339.220	S13	out	close	said as medicine, it sounds like concern
+339.220	346.500	S22	in	-	a father forbidding his daughter
+346.500	353.180	S22	out	close	being careful, not being a tyrant
+353.180	359.850	S22	in	wide	it converted disapproval into advice
+359.850	365.500	S26	out	-	act 5, it did not work
+365.500	371.360	S26	in	left	women kept riding, in rising numbers
+371.360	381.000	S23	out	-	Sarah Hackett Stevenson, 1897
+381.000	390.590	S23	in	tight	not injurious to any part of the anatomy
+390.590	396.880	S13	out	wide	she was pointing out there was nothing there
+396.880	405.000	S14	in	tight	contested at the time, by doctors, in public
+405.000	412.320	S11	out	wide	while the panic was still running
+412.320	416.980	S21	in	wide	some chose to believe the frightening version
+416.980	426.000	S24	out	-	Susan B. Anthony, 1896
+426.000	431.520	S25	in	-	asked by the journalist Nellie Bly
+431.520	441.860	S24	out	tight	more to emancipate women than anything else
+441.860	446.410	S26	in	wide	it was never a health question
+446.410	453.850	S12	out	left	act 6, it disappeared without being disproved
+453.850	462.000	S26	in	close	millions of women rode
+462.000	467.860	S10	out	wide	none of their faces froze
+467.860	476.700	S02	in	wide	a funny thing the Victorians believed
+476.700	484.500	S01	out	-	nobody misread a study, there was no study
+484.500	491.970	S14	in	left	dressed in a language hard to argue with
+491.970	501.970	V04	clip:0.0	-	the fear has evaporated
+501.970	508.490	S27	out	-	completely unremarkable
+508.490	515.000	S27	in	tight	it sounds like a doctor
+515.000	518.800	C3	card	-	outro

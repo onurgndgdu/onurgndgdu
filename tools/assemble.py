@@ -11,8 +11,10 @@ the cuts would jump warm to cold. The correction is measured from the image
 itself, so it needs no per-image tuning by hand.
 
 Usage:
-    ./tts-venv/bin/python tools/assemble.py <src_dir> <work_dir> <out.mp4>
+    ./tts-venv/bin/python tools/assemble.py <src_dir> <work_dir> <out.mp4> \
+        <timeline.tsv> <cards.json>
 """
+import json
 import os
 import subprocess
 import sys
@@ -40,7 +42,9 @@ CROPS = {
     "right": (0.36, 0.50, 0.72),   # S04, S08 — drops an umbrella out of frame
     "tight": (0.50, 0.48, 0.80),
     "wide":  (0.55, 0.52, 0.92),
-    "blur":  (0.50, 0.50, 1.00),   # S29 — handled separately
+    "left":  (0.38, 0.50, 0.78),
+    "close": (0.50, 0.44, 0.58),   # a detail lifted out of a wider frame
+    "blur":  (0.50, 0.50, 1.00),   # handled separately
 }
 
 
@@ -109,13 +113,9 @@ def clip(src, dst, dur, start, upscale):
 BADGE = {"C1": 300, "C2": 0, "C3": 190}
 
 
-def card(kind, dst, dur, badge=None):
+def card(kind, dst, dur, badge=None, texts=None):
     fade = 8 / FPS
-    texts = {
-        "C1": [("SECRETS OF STUFF", 92, 0.66), ("Things That Were Once Forbidden", 38, 0.75)],
-        "C2": [("HANWAYS", 150, 0.50)],
-        "C3": [("More forgotten objects next week.", 54, 0.72)],
-    }[kind]
+    texts = texts[kind]
     draws = ",".join(
         f"drawtext=fontfile={FONT}:text='{txt}':fontcolor={AMBER}:fontsize={size}:"
         f"x=(w-text_w)/2:y=h*{y}-text_h/2"
@@ -138,10 +138,11 @@ def card(kind, dst, dur, badge=None):
          "-vf", vf, "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-an", dst])
 
 
-def main(src_dir, work, out):
+def main(src_dir, work, out, timeline, cards_path):
     os.makedirs(work, exist_ok=True)
+    cards = json.load(open(cards_path))
     rows = []
-    for line in open("tools/timeline-video01.tsv"):
+    for line in open(timeline):
         if line.startswith("#") or len(line.split("\t")) < 3:
             continue
         start, end, asset, move, crop = line.split("\t")[:5]
@@ -154,7 +155,8 @@ def main(src_dir, work, out):
         parts.append(dst)
         if not os.path.exists(dst):
             if move == "card":
-                card(asset, dst, dur, badge=f"{src_dir}/crow-badge.png")
+                card(asset, dst, dur, badge=f"{src_dir}/crow-badge.png",
+                     texts=cards)
             elif move.startswith("clip:"):
                 clip(f"{src_dir}/{asset}.mp4", dst, dur, float(move.split(":")[1]),
                      asset in ("AI01", "AI02H", "AI02J"))
@@ -172,4 +174,4 @@ def main(src_dir, work, out):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3])
+    main(*sys.argv[1:6])
