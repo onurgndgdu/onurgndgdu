@@ -1,0 +1,114 @@
+{
+  "audio": [
+    [
+      0.0,
+      22.5
+    ]
+  ],
+  "segments": [
+    {
+      "src": 3.0,
+      "dur": 1.7,
+      "cx": 0.42,
+      "in": true
+    },
+    {
+      "src": 75.0,
+      "dur": 1.6,
+      "cx": 0.45,
+      "in": false
+    },
+    {
+      "src": 48.0,
+      "dur": 1.5,
+      "cx": 0.5,
+      "in": true
+    },
+    {
+      "src": 16.0,
+      "dur": 1.7,
+      "cx": 0.48,
+      "in": false
+    },
+    {
+      "src": 415.0,
+      "dur": 3.05,
+      "cx": 0.33,
+      "in": false
+    },
+    {
+      "src": 190.0,
+      "dur": 1.7,
+      "cx": 0.32,
+      "in": true
+    },
+    {
+      "src": 203.0,
+      "dur": 1.6,
+      "cx": 0.42,
+      "in": false
+    },
+    {
+      "src": 268.0,
+      "dur": 1.8,
+      "cx": 0.5,
+      "in": true
+    },
+    {
+      "src": 228.0,
+      "dur": 1.6,
+      "cx": 0.35,
+      "in": false
+    },
+    {
+      "src": 296.0,
+      "dur": 1.5,
+      "cx": 0.5,
+      "in": true
+    },
+    {
+      "src": 178.0,
+      "dur": 1.57,
+      "cx": 0.42,
+      "in": false
+    },
+    {
+      "src": 415.0,
+      "dur": 3.18,
+      "cx": 0.33,
+      "in": true
+    }
+  ],
+  "texts": [
+    {
+      "start": 0.0,
+      "end": 6.6,
+      "y": 0.12,
+      "size": 64,
+      "lines": [
+        "LONDON, 1750",
+        "Carrying this got you",
+        "mocked in the street"
+      ]
+    },
+    {
+      "start": 6.7,
+      "end": 9.4,
+      "y": 0.14,
+      "size": 92,
+      "lines": [
+        "AN UMBRELLA"
+      ]
+    },
+    {
+      "start": 19.5,
+      "end": 22.25,
+      "y": 0.13,
+      "size": 72,
+      "lines": [
+        "HE KEPT DOING IT",
+        "FOR 30 YEARS"
+      ]
+    }
+  ]
+}

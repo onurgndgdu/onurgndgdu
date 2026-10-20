@@ -1,0 +1,111 @@
+{
+  "audio": [
+    [
+      0.0,
+      8.2
+    ],
+    [
+      22.62,
+      30.6
+    ]
+  ],
+  "segments": [
+    {
+      "src": 4.0,
+      "dur": 1.6,
+      "cx": 0.46,
+      "in": true
+    },
+    {
+      "src": 18.0,
+      "dur": 1.5,
+      "cx": 0.42,
+      "in": false
+    },
+    {
+      "src": 312.0,
+      "dur": 1.5,
+      "cx": 0.48,
+      "in": true
+    },
+    {
+      "src": 176.0,
+      "dur": 1.5,
+      "cx": 0.5,
+      "in": false
+    },
+    {
+      "src": 190.0,
+      "dur": 2.1,
+      "cx": 0.4,
+      "in": true
+    },
+    {
+      "src": 92.0,
+      "dur": 1.3,
+      "cx": 0.38,
+      "in": false
+    },
+    {
+      "src": 220.0,
+      "dur": 1.25,
+      "cx": 0.5,
+      "in": true
+    },
+    {
+      "src": 134.0,
+      "dur": 1.25,
+      "cx": 0.46,
+      "in": false
+    },
+    {
+      "src": 366.0,
+      "dur": 1.1,
+      "cx": 0.46,
+      "in": true
+    },
+    {
+      "src": 190.0,
+      "dur": 0.89,
+      "cx": 0.4,
+      "in": false
+    },
+    {
+      "src": 505.0,
+      "dur": 2.19,
+      "cx": 0.44,
+      "in": true
+    }
+  ],
+  "texts": [
+    {
+      "start": 0.0,
+      "end": 5.2,
+      "y": 0.12,
+      "size": 64,
+      "lines": [
+        "THE 1890s",
+        "Doctors warned women",
+        "about a new disease"
+      ]
+    },
+    {
+      "start": 5.4,
+      "end": 8.0,
+      "y": 0.14,
+      "size": 84,
+      "lines": [
+        "BICYCLE FACE"
+      ]
+    },
+    {
+      "start": 14.2,
+      "end": 16.0,
+      "y": 0.13,
+      "size": 78,
+      "lines": [
+        "IT DID NOT EXIST"
+      ]
+    }
+  ]
+}
